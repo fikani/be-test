@@ -2,7 +2,7 @@ const supertest = require("supertest");
 const app = require("../src/app");
 const { Profile, Contract } = require("../src/model");
 
-describe("Test", () => {
+describe("Contracts", () => {
   describe("GET:/contracts/:id", () => {
     beforeEach(async () => {
       await Profile.create({

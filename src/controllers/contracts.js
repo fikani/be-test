@@ -3,10 +3,6 @@ const { Op } = require("sequelize");
 const { getProfile } = require("../middleware/getProfile");
 const router = Router();
 
-/**
- * FIX ME!
- * @returns contract by id
- */
 router.get("/contracts/:id", getProfile, async (req, res) => {
   const { Contract } = req.app.get("models");
   const { id } = req.params;
